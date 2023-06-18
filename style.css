@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    padding: 16px 8px;
+    background: linear-gradient(#ff91c8, #ce92ff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.comments-list,form,.main{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    background-color: #ffffff70;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 900px;
+    width: 100%;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.form-control input, .form-control textarea{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 10px 15px;
+}
+
+.form-control input[type=submit]{
+    border: none;
+    border-radius: 40px;
+    background-color: white;
+    color: black;
+    transition: .2s;
+    font-weight: bold;
+}
+.form-control input[type=submit]:hover{
+    filter: invert();
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.main ul li a{
+    text-decoration: none;
+    color:white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 40px;
+    transition: .2s;
+}   
+.main ul li a:hover{
+    filter: invert();
+}
